@@ -12,4 +12,7 @@ jobs:
       shell: bash
       run: |
         which pacman
-        pacman -S mingw-w64-clang-aarch64-clang
+        which curl
+        which clang
+        which gcc
+        which go && go version
