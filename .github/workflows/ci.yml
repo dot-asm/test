@@ -17,4 +17,5 @@ jobs:
         which clang || true
         which gcc || true
         which go && go version
+        go env
         go run a.go
