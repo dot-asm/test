@@ -11,8 +11,8 @@ jobs:
     - name: test
       shell: bash
       run: |
-        which pacman || true
         which curl || true
         which clang || true
         which gcc || true
         which go && go version
+        go run a.go
