@@ -14,8 +14,8 @@ jobs:
       shell: bash
       run: |
         which curl || true
-        which clang || true
-        which gcc || true
-        which go && go version
+        which clang && clang --version || true
+        which gcc && gcc --version || true
+        which go && go version || true
         go env
         go run a.go
